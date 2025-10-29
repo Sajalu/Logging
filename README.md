@@ -84,7 +84,7 @@ Create a RESTful tally counter API with logging on all endpoints and actions usi
    cd T2
 2. Install dependencies:
    ```bash
-npm install
+   npm install
 3. Start the Express server:
    ```bash
    node src/main.js
