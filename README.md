@@ -50,14 +50,12 @@ Create and test a Winston logger in a Node.js application.
 1. Navigate to the Task 1 directory:
    ```bash
    cd T1
-Install dependencies:
-
-npm install
-
-
-Run the logging script:
-
-node src/main.js
+2. Install dependencies:
+   ```bash
+    npm install
+3. Run the logging script:
+   ```bash
+   node src/main.js
 
 
 Check logs:
@@ -84,14 +82,12 @@ Create a RESTful tally counter API with logging on all endpoints and actions usi
 1. Enter the Task 2 directory:
    ```bash
    cd T2
-Install dependencies:
-
+2. Install dependencies:
+   ```bash
 npm install
-
-
-Start the Express server:
-
-node src/main.js
+3. Start the Express server:
+   ```bash
+   node src/main.js
 
 🧠 Usage
 
