@@ -75,18 +75,15 @@ src/logger.js	Winston logger configuration
 src/main.js	Generates sample log messages at various levels
 
 
-Task 2: Tally Counter API
-🎯 Objective
+## 🧮 Task 2: Tally Counter API
 
-Build a simple RESTful API that maintains a tally counter and logs all endpoint actions.
+### 🎯 Objective
+Create a RESTful tally counter API with logging on all endpoints and actions using **Express** and **Winston**.
 
-⚙️ Setup
-
-Navigate to the Task 2 directory:
-
-cd T2
-
-
+### ⚙️ Setup
+1. Enter the Task 2 directory:
+   ```bash
+   cd T2
 Install dependencies:
 
 npm install
@@ -96,38 +93,28 @@ Start the Express server:
 
 node src/main.js
 
-🔗 API Endpoints
+🧠 Usage
 
-You can use a web browser, Postman, or curl to interact with the API.
+Use your web browser or an API client such as Postman or curl to interact with the endpoints.
 
+API Endpoints
 Method	Endpoint	Description
-GET	/counter-increase	Increment the counter
-GET	/counter-read	Read the current counter value
-GET	/counter-reset	Reset the counter to zero
-
-Example:
-
-GET http://localhost:3000/counter-increase
+GET	/counter-increase	Increment the counter by 1
+GET	/counter-read	Retrieve the current counter value
+GET	/counter-reset	Reset the counter to 0
+Example Request
+curl http://localhost:3000/counter-increase
 
 🪵 Logging
 
-All API actions are logged both in the terminal and in:
+All API actions and events are logged in both the terminal and log files:
 
 logs/error.log
 logs/combined.log
 
 📁 File Descriptions
 File	Description
-src/logger.js	Winston logger (same configuration as Task 1)
-src/counter.js	Counter’s business logic and logging
-src/routes.js	API routing and endpoint logging
-src/main.js	App setup and server initialization
-⚙️ Configuration
-
-.gitignore prevents unnecessary files from being tracked:
-
-Log files:
-
-logs/error.log → Error logs
-
-logs/combined.log → All logs (info, warnings, errors, etc.)
+src/logger.js	Winston logger configuration (same as Task 1)
+src/counter.js	Counter business logic and logging
+src/routes.js	Express routing and endpoint-level logging
+src/main.js	Server setup and initialization
